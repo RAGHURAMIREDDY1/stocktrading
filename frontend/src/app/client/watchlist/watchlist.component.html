@@ -1,0 +1,19 @@
+<app-navbar />
+<h2>Watchlist</h2>
+<div class="watchlist-container">
+  <div class="watchlist-item" *ngFor="let stock of watchlist">
+    <div class="stock-info">
+      <h3>{{ stock.symbol }}</h3>
+      <p>{{ stock.companyName }}</p>
+    </div>
+    <div class="stock-price">
+      <p>{{ stock.price | currency }}</p>
+    </div>
+    <div class="stock-actions">
+      <button (click)="removeFromWatchlist(stock)">Remove</button>
+    </div>
+  </div>
+  <div class="empty-watchlist" *ngIf="watchlist.length === 0">
+    Your watchlist is empty.
+  </div>
+</div>

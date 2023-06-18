@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#">Stock Trading</a>
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
+      data-toggle="collapse"
+      data-target="#navbarNav"
       aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -13,43 +13,50 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Markets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Stocks</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="#">Trading</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tools</a>
+          <a class="nav-link" href="#">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign up</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<script>
-  // Close the navbar when a link is clicked
-  var navbarLinks = document.querySelectorAll(".navbar-nav li a");
-  var navbarCollapse = document.querySelector(".navbar-collapse");
-
-  navbarLinks.forEach(function (navbarLink) {
-    navbarLink.addEventListener("click", function () {
-      if (navbarCollapse.classList.contains("show")) {
-        navbarCollapse.classList.remove("show");
-      }
-    });
-  });
-</script>
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <ul class="sidebar-nav">
+    <li class="sidebar-item">
+      <a class="sidebar-link" href="#">Home</a>
+    </li>
+    <li class="sidebar-item">
+      <a class="sidebar-link" href="#">Stocks</a>
+    </li>
+    <li class="sidebar-item">
+      <a class="sidebar-link" href="#">Trading</a>
+    </li>
+    <li class="sidebar-item">
+      <a class="sidebar-link" href="#">Portfolio</a>
+    </li>
+    <li class="sidebar-item">
+      <a class="sidebar-link" href="#">About</a>
+    </li>
+    <li class="sidebar-item">
+      <a class="sidebar-link" href="#">Contact</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,33 @@
+.portfolio-container {
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stock-info {
+  flex: 2;
+}
+
+.stock-quantity {
+  text-align: left;
+  margin-right: 10px;
+}
+
+.stock-value {
+  text-align: right;
+}
+
+.empty-portfolio {
+  margin-top: 10px;
+  color: #999;
+}

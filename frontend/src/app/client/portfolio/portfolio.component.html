@@ -1,0 +1,19 @@
+<app-navbar />
+<h2>Portfolio</h2>
+<div class="portfolio-container">
+  <div class="portfolio-item" *ngFor="let stock of portfolio">
+    <div class="stock-info">
+      <h3>{{ stock.symbol }}</h3>
+      <p>{{ stock.companyName }}</p>
+    </div>
+    <div class="stock-quantity">
+      <p>Quantity: {{ stock.quantity }}</p>
+    </div>
+    <div class="stock-value">
+      <p>Value: {{ stock.value | currency }}</p>
+    </div>
+  </div>
+  <div class="empty-portfolio" *ngIf="portfolio.length === 0">
+    Your portfolio is empty.
+  </div>
+</div>
